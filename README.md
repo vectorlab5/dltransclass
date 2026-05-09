@@ -117,9 +117,4 @@ For determinism, all experiments fix `PYTHONHASHSEED`, NumPy, PyTorch, and CUDA 
 
 Released under the MIT License. See [LICENSE](LICENSE) for details.
 
-## Contact
-
-- **Xiaorui Ma** — Department of Library, Jiangsu Vocational College of Finance and Economics — `Cy_Carmen@163.com`
-- **Zhengyu Zeng** — Department of State-owned Assets Management, Jiangsu Vocational College of Finance and Economics — `51797998@qq.com`
-
 For bug reports and feature requests please use the [GitHub issue tracker](https://github.com/vectorlab5/dltransclass/issues).
