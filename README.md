@@ -4,10 +4,6 @@
 
 This repository contains the official implementation of *DLTransClass*, a transformer-based framework for automatic text classification in digital libraries. The model encodes title, abstract, keyword, and subject-related fields with a shared transformer, fuses them through a Wasserstein metadata barycenter, and minimizes a missingness-aware Wasserstein objective whose first-order surrogate yields a local variation penalty on the fused representation.
 
-> **Paper:** Ma, X. and Zeng, Z. *Metadata-Aware Transformer Classification for Digital Libraries with Wasserstein Field Fusion.* Alexandria Engineering Journal, 2026. *(to appear)*
-
----
-
 ## Highlights
 
 - **Field-aware barycentric fusion.** Each bibliographic field is encoded by a shared transformer and treated as a Dirac mass in the embedding space; the fused record representation is the weighted Wasserstein barycenter.
