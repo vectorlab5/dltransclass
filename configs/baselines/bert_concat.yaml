@@ -1,0 +1,17 @@
+# BERT-Concat baseline (Comment R2.1, Table 3).
+
+baseline: bert_concat
+
+model:
+  backbone: bert-base-uncased
+  max_length: 512
+  num_classes: 18
+
+train:
+  batch_size: 16
+  num_workers: 4
+  learning_rate: 2.0e-5
+  weight_decay: 0.01
+  num_epochs: 8
+  warmup_ratio: 0.1
+  fp16: true

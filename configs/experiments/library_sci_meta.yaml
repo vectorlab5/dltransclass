@@ -1,0 +1,36 @@
+# Library-Sci-Meta — long-tail LIS subject assignment with 32 sub-disciplines.
+
+data:
+  train: data/processed/library_sci_meta/train.parquet
+  val:   data/processed/library_sci_meta/val.parquet
+  test:  data/processed/library_sci_meta/test.parquet
+
+model:
+  backbone: bert-base-uncased
+  num_classes: 32
+  attn_dim: 128
+  rho0: 0.08
+  beta_m: 0.6
+  beta_v: 0.35
+  lambda_var: 1.0
+  weight_decay: 0.01
+  pooling: mean
+  budgets:
+    title: 64
+    abstract: 256
+    keywords: 48
+    subject: 48
+
+train:
+  batch_size: 16
+  num_workers: 4
+  args:
+    output_dir: checkpoints/library_sci_meta
+    learning_rate: 2.0e-5
+    weight_decay: 0.01
+    num_epochs: 10
+    grad_accum_steps: 4
+    log_every: 50
+    eval_every_epochs: 1
+    warmup_ratio: 0.1
+    fp16: true

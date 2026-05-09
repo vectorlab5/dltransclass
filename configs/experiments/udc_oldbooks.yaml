@@ -1,0 +1,36 @@
+# Reference experiment configuration for UDC-OldBooks (Section 4.1).
+
+data:
+  train: data/processed/udc_oldbooks/train.parquet
+  val:   data/processed/udc_oldbooks/val.parquet
+  test:  data/processed/udc_oldbooks/test.parquet
+
+model:
+  backbone: bert-base-uncased
+  num_classes: 18
+  attn_dim: 128
+  rho0: 0.08
+  beta_m: 0.6
+  beta_v: 0.35
+  lambda_var: 1.0
+  weight_decay: 0.01
+  pooling: mean
+  budgets:
+    title: 64
+    abstract: 256
+    keywords: 48
+    subject: 48
+
+train:
+  batch_size: 16
+  num_workers: 4
+  args:
+    output_dir: checkpoints/udc_oldbooks
+    learning_rate: 2.0e-5
+    weight_decay: 0.01
+    num_epochs: 8
+    grad_accum_steps: 4
+    log_every: 50
+    eval_every_epochs: 1
+    warmup_ratio: 0.1
+    fp16: true

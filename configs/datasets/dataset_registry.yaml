@@ -1,0 +1,57 @@
+# Dataset metadata used by data preparation scripts.
+# Source citations match the "Datasets" paragraph in the paper (Section 4.1).
+
+datasets:
+  udc_oldbooks:
+    classes: 18
+    n_train: 8400
+    n_val: 1200
+    n_test: 2400
+    avg_words: 186
+    obs_rates: { title: 1.00, abstract: 0.72, keywords: 0.41, subject: 0.41 }
+    citation: KRAGELJ2021755
+
+  lcsh_theses:
+    classes: 26
+    n_train: 11200
+    n_val: 1600
+    n_test: 3200
+    avg_words: 214
+    obs_rates: { title: 1.00, abstract: 0.83, keywords: 0.38, subject: 0.38 }
+    citation: USTA2025695
+
+  jucs_meta:
+    classes: 12
+    n_train: 6800
+    n_val: 900
+    n_test: 1900
+    avg_words: 247
+    obs_rates: { title: 1.00, abstract: 0.91, keywords: 0.77, subject: 0.77 }
+    citation: MITRA2025113896
+
+  compscholar_meta:
+    classes: 15
+    n_train: 9500
+    n_val: 1300
+    n_test: 2700
+    avg_words: 265
+    obs_rates: { title: 1.00, abstract: 0.95, keywords: 0.81, subject: 0.81 }
+    citation: curated
+
+  arxiv_cs_metadata:
+    classes: 40
+    n_train: 15000
+    n_val: 2000
+    n_test: 4000
+    avg_words: 195
+    obs_rates: { title: 1.00, abstract: 0.98, keywords: 0.92, subject: 0.92 }
+    citation: arxiv
+
+  library_sci_meta:
+    classes: 32
+    n_train: 9200
+    n_val: 1200
+    n_test: 2500
+    avg_words: 230
+    obs_rates: { title: 1.00, abstract: 0.81, keywords: 0.45, subject: 0.45 }
+    citation: curated

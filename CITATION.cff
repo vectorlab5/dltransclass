@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+title: "DLTransClass: Metadata-Aware Transformer Classification for Digital Libraries with Wasserstein Field Fusion"
+message: "If you use this software, please cite both the software and the associated paper."
+type: software
+authors:
+  - family-names: Ma
+    given-names: Xiaorui
+    affiliation: "Department of Library, Jiangsu Vocational College of Finance and Economics"
+    email: Cy_Carmen@163.com
+  - family-names: Zeng
+    given-names: Zhengyu
+    affiliation: "Department of State-owned Assets Management, Jiangsu Vocational College of Finance and Economics"
+    email: 51797998@qq.com
+repository-code: "https://github.com/vectorlab5/dltransclass"
+license: MIT
+preferred-citation:
+  type: article
+  title: "Metadata-Aware Transformer Classification for Digital Libraries with Wasserstein Field Fusion"
+  authors:
+    - family-names: Ma
+      given-names: Xiaorui
+    - family-names: Zeng
+      given-names: Zhengyu
+  journal: "Alexandria Engineering Journal"
+  year: 2026
